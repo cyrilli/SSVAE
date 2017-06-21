@@ -1,0 +1,4 @@
+model_checkpoint_path: "model.ckpt"
+all_model_checkpoint_paths: "temp/epoch_99.ckpt"
+all_model_checkpoint_paths: "temp/epoch_199.ckpt"
+all_model_checkpoint_paths: "model.ckpt"

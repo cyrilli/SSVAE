@@ -1,0 +1,8 @@
+dataset: CIFAR10
+num train: 39600
+learning rate: 0.001
+decay learning rate: True
+number of epochs to decay learning rate: 200
+latent dimensions: 30
+batch size: 64
+num epochs: 300
