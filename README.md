@@ -1,6 +1,8 @@
 # variational-autoencoder-bearing_supervised
 This repository contains the codes for the course project of Deep Learning at Harbin Institute of Technology (Wangmeng Zuo, Wanxiang Che). I am trying out semi-supervised vae for bearing fault diagnosis. The dataset used for experiment is CWRU Bearing Dataset.
 
+The vibration signals are min-max normalized and then sliced into segments of length 1024, and then FFT is used to transform the segments into frequency coefficients of length 1024 (so yeah, the left and right are symmetrical). The obtained frequency representation is reshaped into 32\*32. (This is probably not a good way to process the vibration signal. I may use 1D dilated convolution in the future.)
+
 ## 1. Using latent variables directly for classification (SVM as classifier)
 Got pretty bad results as expected, and the accuracy declines dramatically with the decrease of training samples.
 
